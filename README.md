@@ -30,7 +30,7 @@ Install Guide:
 
 14.	From any scene the user can use the “Search” bar at the top center of the screen to search for specific products. The user simply types their input into the bar, clicks the search button and in the next scene all products whose ID, category or brand contain the searched text by the user are displayed in the left-hand table. All buttons in this scene function the same a in the “Products in Category” scene.
 
-The “product_recommendation.py” file generates the data in the “nearest_neighbors” and “frequently_purchased” tables. Because the user is loading the prebuilt data into the database it does not need to be run. If the user wishes to run the code to confirm its functionality that can be done easily.
+The “product_recommendation.py” file writes its data in the “nearest_neighbors” and “frequently_purchased” tables. Because the user is loading the prebuilt data into the database it does not need to be run. If the user wishes to run the code to confirm its functionality that can be done easily.
 1.	Ensure Python 3.11 is installed along with the following Python external libraries: Mlxtend, SQLAlchemy, numpy, scikit-learn, pandas, mysql.
 
 2.	Next the user must go into “product_recommendation.py” file and edit two lines. The first line is at line 50 and the user must edit the url in the create_engine functions arguments to allow python to connect to their MySQL connection. The user must change the username, password, hostname, and port to match the values that exist in the existing connection.
