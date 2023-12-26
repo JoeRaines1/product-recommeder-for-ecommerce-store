@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coding.capstone.product_recommender.Prod_in_Cat_Controller">
+   <children>
+      <TextField fx:id="search_bar" layoutX="263.0" layoutY="14.0" onMouseClicked="#search_bar_click" text="Search" />
+      <Button layoutX="415.0" layoutY="14.0" mnemonicParsing="false" onAction="#search_btn_clck" text="Search" />
+      <TableView fx:id="cart" layoutX="435.0" layoutY="80.0" prefHeight="300.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="cat_col" prefWidth="75.0" text="Category" />
+          <TableColumn fx:id="brand_col" prefWidth="75.0" text="Brand" />
+            <TableColumn fx:id="id_col" prefWidth="150.0" text="Product Id" />
+            <TableColumn fx:id="price_col" prefWidth="98.0" text="Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="prod_in_cat" layoutX="14.0" layoutY="97.0" prefHeight="300.0" prefWidth="400.0">
+              <columns>
+                <TableColumn fx:id="prod_cat" prefWidth="75.0" text="Category" />
+                <TableColumn fx:id="prod_brand" prefWidth="75.0" text="Brand" />
+                  <TableColumn fx:id="prod_id" prefWidth="150.0" text="Product Id" />
+                  <TableColumn fx:id="prod_price" prefWidth="98.0" text="Price" />
+              </columns>
+      </TableView>
+      <Button fx:id="remove_item_btn" layoutX="748.0" layoutY="53.0" mnemonicParsing="false" onAction="#remove_from_cart" text="Remove Item" />
+      <Button layoutX="752.0" layoutY="561.0" mnemonicParsing="false" onAction="#add_prod_from_rcmnd" text="Add To Cart" />
+      <TextField fx:id="search_prod_bar" layoutX="14.0" layoutY="65.0" onMouseClicked="#search_prod_click" prefHeight="25.0" prefWidth="250.0" text="Search Products" />
+      <ListView fx:id="recommendations" layoutX="13.0" layoutY="430.0" orientation="HORIZONTAL" prefHeight="125.0" prefWidth="825.0" />
+      <Label disable="true" layoutX="435.0" layoutY="51.0" prefHeight="27.0" prefWidth="122.0" text="Shopping Cart" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="14.0" layoutY="397.0" text="Recommendations" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="14.0" layoutY="38.0" text="Products" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#home" text="Home Screen" />
+      <Button layoutX="290.0" layoutY="65.0" mnemonicParsing="false" onAction="#add_prod" text="Add Product to Cart" />
+   </children>
+</AnchorPane>

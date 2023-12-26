@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"m":"coding.capstone.product_recommender","l":"coding.capstone.product_recommender"}]

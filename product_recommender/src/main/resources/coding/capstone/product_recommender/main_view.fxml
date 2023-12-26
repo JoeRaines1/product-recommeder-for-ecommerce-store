@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="coding.capstone.product_recommender.MainController">
+   <children>
+      <TextField fx:id="search_bar" layoutX="263.0" layoutY="6.0" onMouseClicked="#search_bar_click" text="Search" />
+      <Button fx:id="search_btn" layoutX="415.0" layoutY="6.0" mnemonicParsing="false" onAction="#search_btn_click" text="Search" />
+      <ListView fx:id="categories" layoutX="13.0" layoutY="64.0" prefHeight="325.0" prefWidth="250.0" />
+      <TableView fx:id="cart" layoutX="386.0" layoutY="68.0" prefHeight="325.0" prefWidth="400.0">
+        <columns>
+          <TableColumn fx:id="cat_col" prefWidth="75.0" text="Category" />
+          <TableColumn fx:id="brand_col" prefWidth="75.0" text="Brand" />
+            <TableColumn fx:id="id_col" prefWidth="150.0" text="Product Id" />
+            <TableColumn fx:id="price_col" prefWidth="98.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="remove_item_btn" layoutX="699.0" layoutY="39.0" mnemonicParsing="false" onAction="#remove_item_btn" text="Remove Item" />
+      <Button fx:id="add_prod_btn" layoutX="703.0" layoutY="561.0" mnemonicParsing="false" onAction="#add_btn_clck" text="Add To Cart" />
+      <TextField fx:id="search_ctgrs_bar" layoutX="13.0" layoutY="32.0" onMouseClicked="#search_cat_clck" prefHeight="25.0" prefWidth="250.0" text="Search Categories" />
+      <ListView fx:id="recommendations" layoutX="14.0" layoutY="432.0" orientation="HORIZONTAL" prefHeight="125.0" prefWidth="775.0" />
+      <Label disable="true" layoutX="386.0" layoutY="38.0" prefHeight="27.0" prefWidth="125.0" text="Shopping Cart" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="292.0" layoutY="405.0" text="Recommendations" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label disable="true" layoutX="14.0" layoutY="5.0" text="All Categories" textFill="BLUE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="393.0" mnemonicParsing="false" onAction="#prod_in_cat_btn_clck" text="Show Prodcuts in Category" />
+   </children>
+</AnchorPane>

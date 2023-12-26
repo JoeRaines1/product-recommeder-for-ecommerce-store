@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"coding.capstone.product_recommender"}]
